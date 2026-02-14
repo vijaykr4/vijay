@@ -107,13 +107,13 @@ function App() {
           <video>
             const videoFile="https://drive.google.com/uc?export=download&id=1uqfYovnLe-2tKk0FTy7EbeTccSpDwEau";
             className="success-video"
-            controls
-            autoPlay
+            controls 
+            muted
             playsInline
             src={videoFile}
             style={{ width: '800px', maxWidth: '100%', borderRadius: '16px', marginTop: '20px' }}
           >
-            Your browser does not support the video tag.
+            Your browser does not support the video tag
           </video>
         </div>
       ) : (
