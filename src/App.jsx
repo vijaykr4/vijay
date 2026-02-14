@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import confetti from 'canvas-confetti'
-import videoFile from './assets/vid.mp4'
+import videoFile from './assets/VN20260214_165010.mp4'
 import './App.css'
 
 function App() {
