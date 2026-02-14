@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
 import confetti from 'canvas-confetti'
+import videoFile from './assets/vid.mp4'
 import './App.css'
 
 function App() {
   const [noPressed, setNoPressed] = useState(false);
   const [yesBtnPosition, setYesBtnPosition] = useState({});
-  const videoFile = "https://drive.google.com/uc?export=download&id=1uqfYovnLe-2tKk0FTy7EbeTccSpDwEau";
+
   // Floating hearts generation
   const [hearts, setHearts] = useState([]);
 
@@ -103,11 +104,10 @@ function App() {
         <div className="card success-container">
           <h1 className="success-title">April Fool!!! 😂🤣</h1>
           <h3 className="subtext">Indha twist epadi iruku 🤣</h3>
-           <video>
+          <video
             className="success-video"
             controls
             autoPlay
-            muted
             playsInline
             src={videoFile}
             style={{ width: '800px', maxWidth: '100%', borderRadius: '16px', marginTop: '20px' }}
@@ -119,7 +119,7 @@ function App() {
         <div className="card">
           <h1 className="title">
             <span className="highlight">Kiruthika,</span>
-            Will you be my Valentine forever? 💖💞
+            Will you be my Valentine? 💖💞
           </h1>
 
           <p className="subtext">Choose wisely. (The "Yes" button is... playing hard to get.)</p>
